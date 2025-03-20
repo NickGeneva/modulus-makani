@@ -19,7 +19,7 @@ import torch.distributed as dist
 from torch._utils import _flatten_dense_tensors
 
 from makani.utils import comm
-from modulus.distributed.utils import split_tensor_along_dim
+from physicsnemo.distributed.utils import split_tensor_along_dim
 
 
 

@@ -80,9 +80,9 @@ RUN cd /opt && git clone -b v0.6.4 https://github.com/NVIDIA/torch-harmonics.git
     cd torch-harmonics && \
     pip install -e .
 
-# modulus
-RUN cd /opt && git clone https://github.com/NVIDIA/modulus.git && \
-    cd modulus && \
+# physicsnemo
+RUN cd /opt && git clone https://github.com/NVIDIA/physicsnemo.git && \
+    cd physicsnemo && \
     pip install -e .
 
 # copy source code

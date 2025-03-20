@@ -20,9 +20,9 @@ import math
 from typing import Union
 import numpy as np
 
-# we are using the distributed manager from modulus
-from modulus.distributed.manager import DistributedManager
-from modulus.distributed.config import ProcessGroupNode, ProcessGroupConfig
+# we are using the distributed manager from physicsnemo
+from physicsnemo.distributed.manager import DistributedManager
+from physicsnemo.distributed.config import ProcessGroupNode, ProcessGroupConfig
 
 # we need this
 _DM = None

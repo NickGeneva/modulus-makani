@@ -24,7 +24,7 @@ import torch.nn.functional as F
 
 from makani.utils import comm
 from makani.utils.grids import GridConverter
-from modulus.distributed.mappings import reduce_from_parallel_region, copy_to_parallel_region
+from physicsnemo.distributed.mappings import reduce_from_parallel_region, copy_to_parallel_region
 
 
 class Preprocessor2D(nn.Module):

@@ -20,8 +20,8 @@ import wandb
 from makani.utils import comm
 from makani.utils.metrics.functions import GeometricL1, GeometricRMSE, GeometricACC, Quadrature
 import torch.distributed as dist
-from modulus.distributed.utils import compute_split_shapes
-from modulus.distributed.mappings import gather_from_parallel_region
+from physicsnemo.distributed.utils import compute_split_shapes
+from physicsnemo.distributed.mappings import gather_from_parallel_region
 
 
 class MetricsHandler:

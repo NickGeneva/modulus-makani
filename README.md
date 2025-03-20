@@ -4,7 +4,7 @@
 
 [![tests](https://github.com/NVIDIA/makani/actions/workflows/tests.yml/badge.svg)](https://github.com/NVIDIA/makani/actions/workflows/tests.yml)
 
-Makani (the Hawaiian word for wind 🍃🌺) is an experimental library designed to enable the research and development of machine-learning based weather and climate models in PyTorch. Makani is used for ongoing research. Stable features are regularly ported to the [NVIDIA Modulus](https://developer.nvidia.com/modulus) framework, a framework used for training Physics-ML models in Science and Engineering.
+Makani (the Hawaiian word for wind 🍃🌺) is an experimental library designed to enable the research and development of machine-learning based weather and climate models in PyTorch. Makani is used for ongoing research. Stable features are regularly ported to the [NVIDIA PhysicsNeMo](https://developer.nvidia.com/physicsnemo) framework, a framework used for training Physics-ML models in Science and Engineering.
 
 <div align="center">
 <img src="https://github.com/NVIDIA/makani/blob/main/images/sfno_rollout.gif"  height="388px">
@@ -169,7 +169,7 @@ While this is a research project, we aim to have functional unit tests with dece
 
 ## Further reading
 
-- [Modulus](https://developer.nvidia.com/modulus), NVIDIA's library for physics-ML
+- [PhysicsNeMo](https://developer.nvidia.com/physicsnemo), NVIDIA's library for physics-ML
 - [NVIDIA blog article](https://developer.nvidia.com/blog/modeling-earths-atmosphere-with-spherical-fourier-neural-operators/) on Spherical Fourier Neural Operators for ML-based weather prediction
 - [torch-harmonics](https://github.com/NVIDIA/torch-harmonics), a library for differentiable Spherical Harmonics in PyTorch
 - [ECMWF ERA5 dataset](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels)

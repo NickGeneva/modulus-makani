@@ -33,7 +33,7 @@ import pytz
 from makani.utils.grids import GridConverter
 
 # import splitting logic
-from modulus.distributed.utils import compute_split_shapes
+from physicsnemo.distributed.utils import compute_split_shapes
 
 class MultifilesDataset(Dataset):
     def __init__(self, params, location, train, enable_logging=True):

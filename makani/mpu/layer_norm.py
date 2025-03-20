@@ -22,7 +22,7 @@ from typing import Tuple
 
 # for spatial model-parallelism
 from makani.utils import comm
-from modulus.distributed.mappings import gather_from_parallel_region, copy_to_parallel_region
+from physicsnemo.distributed.mappings import gather_from_parallel_region, copy_to_parallel_region
 
 class DistributedInstanceNorm2d(nn.Module):
     """

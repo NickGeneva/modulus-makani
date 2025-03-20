@@ -111,5 +111,5 @@ SFNO     = "makani.models.networks.sfnonet:SphericalFourierNeuralOperatorNet"
 DebugNet = "makani.models.networks.debug:DebugNet"
 ViT      = "makani.models.networks.vit:VisionTransformer"
 
-[project.entry-points."modulus.models"]
+[project.entry-points."physicsnemo.models"]
 SFNO     = "makani.models.networks.sfnonet:SFNO"

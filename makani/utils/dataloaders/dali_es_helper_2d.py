@@ -35,7 +35,7 @@ import datetime
 import pytz
 
 # import splitting logic
-from modulus.distributed.utils import compute_split_shapes
+from physicsnemo.distributed.utils import compute_split_shapes
 
 class GeneralES(object):
     def _get_slices(self, lst):

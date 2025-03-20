@@ -24,8 +24,8 @@ import torch.nn.functional as F
 
 from makani.utils import comm
 from makani.utils.grids import GridQuadrature
-from modulus.distributed.utils import compute_split_shapes
-from modulus.distributed.mappings import reduce_from_parallel_region, gather_from_parallel_region
+from physicsnemo.distributed.utils import compute_split_shapes
+from physicsnemo.distributed.mappings import reduce_from_parallel_region, gather_from_parallel_region
 
 import torch_harmonics as harmonics
 from torch_harmonics.quadrature import clenshaw_curtiss_weights, legendre_gauss_weights

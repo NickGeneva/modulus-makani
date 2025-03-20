@@ -40,12 +40,12 @@ from makani.mpu.layers import DistributedRealFFT2, DistributedInverseRealFFT2, D
 from makani.utils import comm
 
 # layer normalization
-from modulus.distributed.mappings import scatter_to_parallel_region, gather_from_parallel_region
+from physicsnemo.distributed.mappings import scatter_to_parallel_region, gather_from_parallel_region
 from makani.mpu.layer_norm import DistributedInstanceNorm2d, DistributedLayerNorm
 
 # for annotation of models
-import modulus
-from modulus.models.meta import ModelMetaData
+import physicsnemo
+from physicsnemo.models.meta import ModelMetaData
 
 
 class SpectralFilterLayer(nn.Module):
@@ -639,7 +639,7 @@ class SphericalFourierNeuralOperatorNet(nn.Module):
 
         return x
 
-# this part exposes the model to modulus by constructing modulus Modules
+# this part exposes the model to physicsnemo by constructing physicsnemo Modules
 @dataclass
 class SphericalFourierNeuralOperatorNetMetaData(ModelMetaData):
     name: str = "SFNO"
@@ -649,7 +649,7 @@ class SphericalFourierNeuralOperatorNetMetaData(ModelMetaData):
     amp_cpu: bool = False
     amp_gpu: bool = True
 
-SFNO = modulus.Module.from_torch(
+SFNO = physicsnemo.Module.from_torch(
     SphericalFourierNeuralOperatorNet,
     SphericalFourierNeuralOperatorNetMetaData()
 )
@@ -667,7 +667,7 @@ class FourierNeuralOperatorNetMetaData(ModelMetaData):
     amp_cpu: bool = False
     amp_gpu: bool = True
 
-FNO = modulus.Module.from_torch(
+FNO = physicsnemo.Module.from_torch(
     FourierNeuralOperatorNet,
     FourierNeuralOperatorNetMetaData()
 )

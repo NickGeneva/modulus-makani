@@ -42,8 +42,8 @@ import torch_harmonics.distributed as thd
 from makani.models.common import RealFFT2, InverseRealFFT2
 
 from makani.utils import comm
-from modulus.distributed.utils import split_tensor_along_dim
-from modulus.distributed.mappings import gather_from_parallel_region, scatter_to_parallel_region, \
+from physicsnemo.distributed.utils import split_tensor_along_dim
+from physicsnemo.distributed.mappings import gather_from_parallel_region, scatter_to_parallel_region, \
                                          reduce_from_parallel_region
 from makani.mpu.layers import DistributedRealFFT2, DistributedInverseRealFFT2
 from makani.mpu.fft3d import RealFFT3, InverseRealFFT3, DistributedRealFFT3, DistributedInverseRealFFT3
