@@ -14,7 +14,7 @@
 # limitations under the License.
 
 """
-Model package for easy inference/packaging. Model packages contain all the necessary data to 
+Model package for easy inference/packaging. Model packages contain all the necessary data to
 perform inference and its interface is compatible with earth2mip
 """
 import os
@@ -182,7 +182,7 @@ def load_model_package(package, pretrained=True, device="cpu"):
         best_checkpoint_path = package.get(MODEL_PACKAGE_CHECKPOINT_PATH)
         # critical that this map_location be cpu, rather than the device to
         # avoid out of memory errors.
-        checkpoint = torch.load(best_checkpoint_path, map_location=device)
+        checkpoint = torch.load(best_checkpoint_path, map_location=device, weights_only=False)
         state_dict = checkpoint["model_state"]
         torch.nn.modules.utils.consume_prefix_in_state_dict_if_present(state_dict, "module.")
         model.load_state_dict(state_dict, strict=True)
